@@ -27,13 +27,14 @@
 	<link rel="stylesheet" href="styles/font-awesome.min.css">
 	<link rel="stylesheet" href="styles/style.min.css">
 	<style>
-		.video-ico{
+		.video-ico, .radio-ico{
 			max-width: 100%;
 			margin: 0 10px;
 		}
-		input.video-volume{
+		input.video-volume, input.radio-volume{
 			width: 100px;
 		}
+
 	</style>
 
 </head>
@@ -190,6 +191,11 @@
 			</div>
 			<footer class="footer-fix radio-footer">
 				<button class="radio-stop fa fa-play"></button>
+
+				<span class="fa fa-volume-down radio-ico"></span>
+				<input type="range" class="radio-volume" min="0" max="100" step="1" value="100">
+				<span class="fa fa-volume-up radio-ico"></span>
+
 			</footer>
 		</article>
 	</main>
